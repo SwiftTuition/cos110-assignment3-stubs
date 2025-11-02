@@ -2,7 +2,7 @@
 
 Complete starter code for Assignment 3: Dynamic Data Structures
 
-## 🚀 Quick Start with GitHub Codespace
+## Quick Start with GitHub Codespace
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SwiftTuition/cos110-assignment3-stubs?quickstart=1)
 

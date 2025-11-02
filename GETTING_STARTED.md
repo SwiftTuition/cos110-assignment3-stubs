@@ -8,7 +8,7 @@ Before you start coding, **read the assignment specifications**:
 - **[assignment_specs.md](assignment_specs.md)** - Complete assignment requirements and UML diagrams
 - **[figure_descriptions.md](figure_descriptions.md)** - Detailed descriptions of all UML figures
 
-## 🚀 Quick Start Options
+## Quick Start Options
 
 ### Option 1: GitHub Codespace (Recommended)
 Click the badge in [README.md](README.md) to launch a pre-configured development environment in your browser. No installation needed!
@@ -282,4 +282,4 @@ See the full study guide (if provided by your tutor).
 
 **410/410** on FitchFork with **zero memory leaks**!
 
-Good luck! 🚀
+Good luck!
