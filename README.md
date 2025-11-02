@@ -13,8 +13,30 @@ Click the badge above to start coding in your browser immediately!
 This repository contains:
 - ✅ **14 header files** - All compile correctly (bugs fixed)
 - ✅ **14 stub implementations** - Minimal structure for you to complete
-- ✅ **Test file** - main.cpp for local testing
+- ✅ **Stubbed main.cpp** - Basic demonstration ONLY (see warning below)
 - ✅ **Pre-configured Codespace** - Ready-to-use C++98 development environment
+
+## ⚠️ CRITICAL WARNING: About main.cpp
+
+> **The included main.cpp is "Swift Tuition's Stubbed Main" - a BASIC DEMONSTRATION ONLY!**
+
+This is **NOT** the same main.cpp used in the actual FitchFork submission. It has already been uploaded to FitchFork during testing.
+
+**❌ DO NOT SUBMIT THIS MAIN TO FITCHFORK ❌**
+
+**✅ YOU MUST CREATE YOUR OWN main.cpp ✅**
+
+Use the included main.cpp as a reference for:
+- How to include headers
+- Basic syntax examples
+- Structure ideas
+
+But write your own comprehensive test suite that tests:
+- ALL functions of ALL classes
+- Edge cases (empty, full, invalid inputs)
+- Exception handling
+- Memory management (valgrind!)
+- FitchFork's specific requirements
 
 ## 🔧 Header Fixes Applied
 
