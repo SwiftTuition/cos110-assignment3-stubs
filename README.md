@@ -161,10 +161,6 @@ Iterator& operator--() {
 ### Stack Clone Order
 Stack clone must preserve the original order, not reverse it!
 
-## 📚 Additional Resources
-
-For complete study materials, see the full study guide at: [Link to study materials]
-
 ## ✅ Pre-Submission Checklist
 
 Before submitting to FitchFork:
