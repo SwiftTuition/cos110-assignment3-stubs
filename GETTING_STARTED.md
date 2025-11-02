@@ -35,36 +35,77 @@ Click the badge in [README.md](README.md) to launch a pre-configured development
 ### Option 2: Local Development
 Clone this repository and compile locally using the provided Makefile.
 
-## 🛠️ Using the Makefile
+## 🛠️ Compilation Modes
 
-The Makefile provides convenient commands for building, running, and testing your code.
+**IMPORTANT:** The Makefile supports two compilation modes for different development stages.
 
-### Basic Commands
+### Relaxed Mode (While Implementing)
+
+Use this while working with stubs:
 
 ```bash
-# Build the project
-make
-
-# Build and run
-make run
-
-# Check for memory leaks (recommended before submission!)
-make memcheck
-
-# Clean build artifacts
-make clean
-
-# See all available commands
-make help
+make run-relaxed
 ```
+
+**What happens:**
+- ✅ Compiles successfully even with unimplemented stub functions
+- ✅ Suppresses "unused parameter" warnings
+- ✅ Shows basic demonstration output
+- ✅ Perfect for testing as you implement functions one by one
+
+**Example output:**
+```
+============================================================================
+SWIFT TUITION'S STUBBED MAIN - DEMONSTRATION ONLY
+============================================================================
+⚠️  WARNING: This is NOT a complete test suite!
+⚠️  You MUST create your own comprehensive main.cpp
+============================================================================
+
+=== Exception Demonstration ===
+InvalidIndexException message:
+
+=== Array Demonstration ===
+Created array with capacity: 0
+After adding elements:
+...
+```
+
+### Strict Mode (Before Submission)
+
+Use this before submitting to FitchFork:
+
+```bash
+make run-strict
+```
+
+**What happens:**
+- ❌ Will fail to compile if ANY stub is unimplemented
+- ❌ Treats all warnings as errors (FitchFork requirement)
+- ✅ Forces you to properly implement ALL functions
+- ✅ Ensures code meets FitchFork's standards
+
+**This is what FitchFork uses!** Always test in strict mode before submitting.
+
+### Quick Reference
+
+| Stage | Command | Purpose |
+|-------|---------|---------|
+| **During development** | `make run-relaxed` | Test stubs as you implement |
+| **Before submission** | `make run-strict` | Verify FitchFork compliance |
+| **Memory leak check** | `make memcheck` | Find memory issues |
+
+## 🛠️ Using the Makefile
 
 ### All Available Commands
 
 | Command | Description |
 |---------|-------------|
-| `make` or `make all` | Build the project |
+| `make run-relaxed` | **Compile and run with relaxed warnings** (for stubs) |
+| `make run-strict` | **Compile and run with strict warnings** (for final code) |
+| `make` or `make all` | Build the project (strict mode) |
 | `make debug` | Build with debug symbols (for valgrind) |
-| `make run` | Build and run the program |
+| `make run` | Build and run the program (strict mode) |
 | `make test` | Same as `make run` |
 | `make memcheck` | Full valgrind memory leak check (verbose) |
 | `make leak` | Quick valgrind leak check |

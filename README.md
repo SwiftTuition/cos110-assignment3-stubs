@@ -11,7 +11,7 @@ Click the badge above to start coding in your browser immediately!
 ## 📋 What's Included
 
 This repository contains:
-- ✅ **14 header files** - All compile correctly (bugs fixed)
+- ✅ **14 header files** - Ready to use, all compile correctly
 - ✅ **14 stub implementations** - Minimal structure for you to complete
 - ✅ **Stubbed main.cpp** - Basic demonstration ONLY (see warning below)
 - ✅ **Pre-configured Codespace** - Ready-to-use C++98 development environment
@@ -38,14 +38,70 @@ But write your own comprehensive test suite that tests:
 - Memory management (valgrind!)
 - FitchFork's specific requirements
 
-## 🔧 Header Fixes Applied
+## 🛠️ Compilation Modes
 
-The original assignment headers had 4 major bugs that prevented compilation. These have been fixed:
+The Makefile provides two compilation modes to support different stages of development:
 
-1. **Exception.h** - Added missing `&` to ostream parameter
-2. **DLList.h** - Fixed template recursion (DLLNode<T> not DLLNode<T*>)
-3. **OutOfBoundsException.h** - Fixed include guard typo
-4. **Iterator.h** - Added `#include "Iterator.cpp"`
+### Relaxed Mode (For Stubs)
+
+**Use this while implementing stubs** - allows unused parameter warnings
+
+```bash
+make run-relaxed
+```
+
+**What it does:**
+- Compiles with `-std=c++98 -Wall -Wno-unused-parameter`
+- Suppresses warnings about unused parameters in stub functions
+- Allows you to test basic compilation without implementing everything
+- **Output:** Shows basic demonstration (like the example you saw)
+
+**When to use:**
+- ✅ While implementing stub functions one by one
+- ✅ When testing basic functionality
+- ✅ Early development stages
+
+### Strict Mode (For Final Code)
+
+**Use this before submission** - enforces FitchFork's strict requirements
+
+```bash
+make run-strict
+```
+
+**What it does:**
+- Compiles with `-std=c++98 -Wall -Wextra -Werror`
+- Treats ALL warnings as errors (FitchFork requirement)
+- Forces you to use all parameters and fix all issues
+- **Output:** Will fail to compile until all stubs are properly implemented
+
+**When to use:**
+- ✅ Before submitting to FitchFork
+- ✅ After implementing all functions
+- ✅ For final testing and validation
+
+### Manual Compilation
+
+If you prefer to compile manually:
+
+```bash
+# Relaxed mode (for stubs)
+g++ -std=c++98 -Wall -Wno-unused-parameter main.cpp Exception.cpp InvalidIndexException.cpp InvalidSizeException.cpp ElementNotInListException.cpp OutOfBoundsException.cpp PrinterNotInitialized.cpp TooManyPrintersDeleted.cpp Printer.cpp -o main
+
+# Strict mode (for final code)
+g++ -std=c++98 -Wall -Wextra -Werror main.cpp Exception.cpp InvalidIndexException.cpp InvalidSizeException.cpp ElementNotInListException.cpp OutOfBoundsException.cpp PrinterNotInitialized.cpp TooManyPrintersDeleted.cpp Printer.cpp -o main
+```
+
+### Why Two Modes?
+
+**Stubs have unused parameters by design:**
+- The stubbed functions receive parameters they don't use yet
+- Relaxed mode lets you test compilation without implementing everything
+- Strict mode ensures your final code meets FitchFork's requirements
+
+**FitchFork uses strict compilation:**
+- Your final submission MUST compile with `-Werror`
+- Always test in strict mode before submitting!
 
 ## 📦 Files Structure
 
