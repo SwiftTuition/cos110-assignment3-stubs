@@ -8,6 +8,25 @@ Before you start coding, **read the assignment specifications**:
 - **[assignment_specs.md](assignment_specs.md)** - Complete assignment requirements and UML diagrams
 - **[figure_descriptions.md](figure_descriptions.md)** - Detailed descriptions of all UML figures
 
+## ⚠️ CRITICAL WARNING: About main.cpp
+
+> **The included main.cpp is "Swift Tuition's Stubbed Main" - a BASIC DEMONSTRATION ONLY!**
+
+**This is NOT the same main.cpp used in the actual FitchFork submission.**
+
+**❌ DO NOT SUBMIT THIS MAIN TO FITCHFORK ❌**
+
+The stubbed main.cpp has already been uploaded to FitchFork during testing. Submitting it may be flagged as a duplicate.
+
+**✅ YOU MUST CREATE YOUR OWN COMPREHENSIVE main.cpp ✅**
+
+The included main demonstrates:
+- Basic syntax and usage patterns
+- How to include headers correctly
+- Simple examples of each class
+
+**You must write your own test suite that thoroughly tests ALL functionality!**
+
 ## Quick Start Options
 
 ### Option 1: GitHub Codespace (Recommended)
