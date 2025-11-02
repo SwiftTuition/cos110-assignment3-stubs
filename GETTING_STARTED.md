@@ -108,36 +108,36 @@ make memcheck
 
 Follow this order to build on previous work:
 
-1. **Exception Hierarchy** (1-2 hours)
+1. **Exception Hierarchy**
    - Simple, foundational
    - Test immediately
    - Needed by everything else
 
-2. **Array** (3-4 hours)
+2. **Array**
    - Practice templates
    - Auto-resize logic
    - No dependencies
 
-3. **DLList** (4-5 hours)
+3. **DLList**
    - Master sorted insertion
    - Doubly-linked structure
    - Most complex data structure
 
-4. **Queue & Stack** (3-4 hours each)
+4. **Queue & Stack**
    - Similar patterns
    - Build confidence
    - Queue is FIFO, Stack is LIFO
 
-5. **Iterator** (3-4 hours)
+5. **Iterator**
    - Template template parameters
-   - Critical operator-- fix
+   - Key operator-- fix
    - Uses your data structures
 
-6. **Printer** (2-3 hours)
+6. **Printer**
    - Singleton pattern
    - Uses Iterator internally
 
-## ⚠️ Critical Requirements
+## ⚠️ Key Requirements
 
 ### 1. DLList Must Maintain Sorted Order
 ```cpp

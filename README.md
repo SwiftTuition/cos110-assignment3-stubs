@@ -18,7 +18,7 @@ This repository contains:
 
 ## 🔧 Header Fixes Applied
 
-The original assignment headers had 4 critical bugs that prevented compilation. These have been fixed:
+The original assignment headers had 4 major bugs that prevented compilation. These have been fixed:
 
 1. **Exception.h** - Added missing `&` to ostream parameter
 2. **DLList.h** - Fixed template recursion (DLLNode<T> not DLLNode<T*>)
@@ -112,7 +112,7 @@ Only compile:
 - Bounds checking
 
 #### DLList Class (Hard)
-- **CRITICAL:** Maintain sorted order (ascending)
+- **Swift Note:** Maintain sorted order (ascending)
 - Circular doubly-linked structure
 - Handle 6 insertion cases
 
@@ -132,7 +132,7 @@ Only compile:
 - Singleton pattern
 - Reference counting
 
-## 🔑 Critical Requirements
+## 🔑 Key Requirements
 
 ### DLList MUST Be Sorted
 The list must maintain ascending sorted order at all times. This is tested by FitchFork!
@@ -184,13 +184,3 @@ Before submitting to FitchFork:
 ## 📝 License
 
 These stubs are provided for educational purposes for COS 110 students.
-
-## 🤝 Academic Integrity
-
-These stubs are a **starting point** for your implementation. You must:
-- Understand the concepts before coding
-- Write your own implementation
-- Test thoroughly
-- Ask for help when stuck (but don't copy solutions)
-
-**Remember:** The goal is LEARNING, not just getting marks!
