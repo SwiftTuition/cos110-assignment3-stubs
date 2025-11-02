@@ -1,0 +1,35 @@
+# Compiled files
+*.o
+*.out
+main
+
+# Debugging files
+*.dSYM/
+vgcore.*
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.a
+*.so
+
+# Output files
+printer_output.txt
+*.log
+
+# Test files (keep main.cpp, remove custom test files)
+test_*
+!test_*.cpp
+
+# Backup files
+*.bak
+*.backup

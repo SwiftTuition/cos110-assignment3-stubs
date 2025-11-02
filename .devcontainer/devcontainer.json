@@ -1,0 +1,35 @@
+{
+  "name": "COS 110 Assignment 3 - C++98 Development",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "installOhMyZsh": false
+    }
+  },
+
+  "postCreateCommand": "apt-get update && apt-get install -y g++ valgrind make",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ],
+      "settings": {
+        "C_Cpp.default.cppStandard": "c++98",
+        "C_Cpp.default.compilerPath": "/usr/bin/g++",
+        "C_Cpp.default.intelliSenseMode": "gcc-x64",
+        "files.associations": {
+          "*.h": "cpp",
+          "*.cpp": "cpp"
+        }
+      }
+    }
+  },
+
+  "forwardPorts": [],
+
+  "remoteUser": "vscode"
+}
